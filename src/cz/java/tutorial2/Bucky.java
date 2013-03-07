@@ -45,7 +45,14 @@ public final class Bucky {
 				Arrays.asList(stuff));
 
 		thelist.add("pumpinkinf");
-		thelist.add("");
+		thelist.addFirst("fistthing");
+
+		// convert back to an array
+		stuff = thelist.toArray(new String[thelist.size()]);
+
+		for (String string : stuff) {
+			System.out.printf("%s ", string);
+		}
 	}
 
 	/**
