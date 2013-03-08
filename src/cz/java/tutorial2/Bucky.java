@@ -42,7 +42,7 @@ public final class Bucky {
 	}
 
 	/**
-	 * addAll.
+	 * addAll. frequency, disjoint.
 	 */
 	private static void tutorial12() {
 
@@ -62,6 +62,10 @@ public final class Bucky {
 		System.out.printf("%s ", list2);
 		System.out.println();
 
+		System.out.println(Collections.frequency(list2, "digg"));
+
+		boolean tof = Collections.disjoint(list1, list2);
+		System.out.println(tof);
 	}
 
 	/**
