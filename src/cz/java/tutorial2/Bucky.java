@@ -37,10 +37,11 @@ public final class Bucky {
 		// tutorial08();
 		// tutorial09();
 		tutorial10();
+
 	}
 
 	/**
-	 * Methods reverese and copy.
+	 * Methods reverese and copy. Collections methods fill.
 	 */
 	private static void tutorial10() {
 		// create an array and convert to lsit
@@ -52,6 +53,7 @@ public final class Bucky {
 		// reverse and print out the lsit
 		Collections.reverse(list);
 		System.out.println("After reverse : ");
+		output(list);
 
 		// create new array and new lsti
 		Character[] newRay = new Character[3];
@@ -59,6 +61,14 @@ public final class Bucky {
 
 		// copy contents of list into lsitcopy
 		Collections.copy(listCopy, list);
+		System.out.println("Copy of list : ");
+		output(listCopy);
+
+		// fill collections with crap
+		Collections.fill(list, 'X');
+		System.out.println("After filling the lsti : ");
+		output(list);
+
 	}
 
 	/**
@@ -68,8 +78,11 @@ public final class Bucky {
 	 *            The list which will be displayed.
 	 */
 	private static void output(final List<Character> list) {
-		// TODO Auto-generated method stub
+		for (Character character : list) {
+			System.out.printf("%s ", character);
+		}
 
+		System.out.println();
 	}
 
 	/**
