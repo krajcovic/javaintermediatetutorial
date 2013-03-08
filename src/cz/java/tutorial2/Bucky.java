@@ -6,6 +6,7 @@ package cz.java.tutorial2;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -33,12 +34,30 @@ public final class Bucky {
 		// tutorial01();
 		// tutorial04();
 		// tutorial06();
-		tutorial08();
+		// tutorial08();
+		tutorial09();
+	}
+
+	/**
+	 * Collections method sort.
+	 */
+	private static void tutorial09() {
+
+		String[] crap = { "aples", "lemons", "geese", "bacon", "youtube" };
+		List<String> l1 = Arrays.asList(crap);
+
+		Collections.sort(l1);
+		System.out.printf("%s\n", l1);
+
+		Collections.sort(l1, Collections.reverseOrder());
+		System.out.printf("%s\n", l1);
+
 	}
 
 	/**
 	 * Converting lists to arrays.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial08() {
 		String[] stuff = { "babies", "watermelong", "melons", "fudge" };
 		LinkedList<String> thelist = new LinkedList<String>(
