@@ -36,13 +36,38 @@ public final class Bucky {
 		// tutorial06();
 		// tutorial08();
 		// tutorial09();
-		tutorial10();
+		// tutorial10();
+		tutorial12();
+
+	}
+
+	/**
+	 * addAll.
+	 */
+	private static void tutorial12() {
+
+		// convert stuff array to list
+		String[] stuff = { "apples", "beef", "corn", "ham" };
+		List<String> list1 = Arrays.asList(stuff);
+
+		ArrayList<String> list2 = new ArrayList<String>();
+		list2.add("youtube");
+		list2.add("google");
+		list2.add("digg");
+
+		System.out.printf("%s ", list2);
+		System.out.println();
+
+		Collections.addAll(list2, stuff);
+		System.out.printf("%s ", list2);
+		System.out.println();
 
 	}
 
 	/**
 	 * Methods reverese and copy. Collections methods fill.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial10() {
 		// create an array and convert to lsit
 		Character[] ray = { 'p', 'w', 'n' };
