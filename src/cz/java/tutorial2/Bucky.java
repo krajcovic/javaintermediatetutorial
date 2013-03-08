@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Stack;
 
 /**
  * @author "Dusan Krajcovic"
@@ -37,13 +38,52 @@ public final class Bucky {
 		// tutorial08();
 		// tutorial09();
 		// tutorial10();
-		tutorial12();
+		// tutorial12();
+		tutorial14();
+
+	}
+
+	/**
+	 * Stacks, push, pop.
+	 */
+	private static void tutorial14() {
+		Stack<String> stack = new Stack<String>();
+		stack.push("bottom");
+		printStack(stack);
+
+		stack.push("second");
+		printStack(stack);
+
+		stack.push("third");
+		printStack(stack);
+
+		stack.pop();
+		printStack(stack);
+
+		stack.pop();
+		printStack(stack);
+
+		stack.pop();
+		printStack(stack);
+	}
+
+	/**
+	 * Print to system out strings from stack.
+	 * 
+	 * @param stack
+	 *            The stack contains strings.
+	 */
+	private static void printStack(final Stack<String> stack) {
+
+		System.out.printf("%s TOP", stack);
+		System.out.println();
 
 	}
 
 	/**
 	 * addAll. frequency, disjoint.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial12() {
 
 		// convert stuff array to list
