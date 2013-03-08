@@ -35,12 +35,47 @@ public final class Bucky {
 		// tutorial04();
 		// tutorial06();
 		// tutorial08();
-		tutorial09();
+		// tutorial09();
+		tutorial10();
+	}
+
+	/**
+	 * Methods reverese and copy.
+	 */
+	private static void tutorial10() {
+		// create an array and convert to lsit
+		Character[] ray = { 'p', 'w', 'n' };
+		List<Character> list = Arrays.asList(ray);
+		System.out.println("List is : ");
+		output(list);
+
+		// reverse and print out the lsit
+		Collections.reverse(list);
+		System.out.println("After reverse : ");
+
+		// create new array and new lsti
+		Character[] newRay = new Character[3];
+		List<Character> listCopy = Arrays.asList(newRay);
+
+		// copy contents of list into lsitcopy
+		Collections.copy(listCopy, list);
+	}
+
+	/**
+	 * Print data from list.
+	 * 
+	 * @param list
+	 *            The list which will be displayed.
+	 */
+	private static void output(final List<Character> list) {
+		// TODO Auto-generated method stub
+
 	}
 
 	/**
 	 * Collections method sort.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial09() {
 
 		String[] crap = { "aples", "lemons", "geese", "bacon", "youtube" };
