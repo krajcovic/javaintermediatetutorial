@@ -44,13 +44,55 @@ public final class Bucky {
 		// tutorial12();
 		// tutorial14();
 		// tutorial15();
-		tutorial16();
+		// tutorial16();
+		tutorial17();
+
+	}
+
+	/**
+	 * Generic methods.
+	 */
+	private static void tutorial17() {
+		Integer[] iray = { 1, 2, 3, 4 };
+		Character[] cray = { 'b', 'u', 'c', 'y' };
+
+		printMe(iray);
+		printMe(cray);
+	}
+
+	/**
+	 * Print to console array of Character's.
+	 * 
+	 * @param cray
+	 */
+	private static void printMe(Character[] cray) {
+		for (Character character : cray) {
+			System.out.printf("%s ", character);
+		}
+
+		System.out.println();
+
+	}
+
+	/**
+	 * Print to console array of Integer's.
+	 * 
+	 * @param iray
+	 */
+	private static void printMe(Integer[] iray) {
+
+		for (Integer integer : iray) {
+			System.out.printf("%s ", integer);
+		}
+
+		System.out.println();
 
 	}
 
 	/**
 	 * HashSet.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial16() {
 		String[] things = { "apple", "bob", "ham", "bob", "bacon" };
 		List<String> list = Arrays.asList(things);
