@@ -61,32 +61,18 @@ public final class Bucky {
 	}
 
 	/**
-	 * Print to console array of Character's.
+	 * Print to console array of T's.
 	 * 
-	 * @param cray
+	 * @param <T>
+	 *            The generic type of array.
+	 * @param array
+	 *            The array for printing.
 	 */
-	private static void printMe(Character[] cray) {
-		for (Character character : cray) {
-			System.out.printf("%s ", character);
+	public static <T> void printMe(final T[] array) {
+		for (T t : array) {
+			System.out.printf("%s ", t);
 		}
-
 		System.out.println();
-
-	}
-
-	/**
-	 * Print to console array of Integer's.
-	 * 
-	 * @param iray
-	 */
-	private static void printMe(Integer[] iray) {
-
-		for (Integer integer : iray) {
-			System.out.printf("%s ", integer);
-		}
-
-		System.out.println();
-
 	}
 
 	/**
