@@ -47,7 +47,6 @@ public final class Bucky {
 		// tutorial16();
 		// tutorial17();
 		tutorial18();
-
 	}
 
 	/**
