@@ -9,7 +9,7 @@ import javax.swing.JApplet;
  * @author "Dusan Krajcovic"
  * 
  */
-public class MyApplet extends JApplet {
+public class MyApplet21 extends JApplet {
 
 	/**
 	 * Generated UID.
