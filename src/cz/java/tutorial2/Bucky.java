@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.PriorityQueue;
 import java.util.Stack;
 
 /**
@@ -39,13 +40,36 @@ public final class Bucky {
 		// tutorial09();
 		// tutorial10();
 		// tutorial12();
-		tutorial14();
+		// tutorial14();
+		tutorial15();
 
+	}
+
+	/**
+	 * Queue.
+	 */
+	private static void tutorial15() {
+		PriorityQueue<String> q = new PriorityQueue<>();
+
+		q.offer("first");
+		q.offer("second");
+		q.offer("third");
+
+		System.out.printf("%s ", q);
+		System.out.println();
+
+		System.out.printf("%s ", q.peek());
+		System.out.println();
+
+		q.poll();
+		System.out.printf("%s ", q);
+		System.out.println();
 	}
 
 	/**
 	 * Stacks, push, pop.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial14() {
 		Stack<String> stack = new Stack<String>();
 		stack.push("bottom");
