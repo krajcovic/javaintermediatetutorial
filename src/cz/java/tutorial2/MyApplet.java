@@ -1,3 +1,4 @@
+package cz.java.tutorial2;
 import java.awt.Graphics;
 
 import javax.swing.JApplet;
