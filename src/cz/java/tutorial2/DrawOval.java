@@ -1,6 +1,5 @@
 package cz.java.tutorial2;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.beans.Transient;
@@ -41,7 +40,7 @@ public class DrawOval extends JPanel {
 	 * @see javax.swing.JComponent#paint(java.awt.Graphics)
 	 */
 	@Override
-	public void paint(Graphics g) {
+	public final void paint(final Graphics g) {
 		super.paint(g);
 
 		g.fillOval(10, 10, getD(), getD());

@@ -2,7 +2,6 @@ package cz.java.tutorial2;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.HeadlessException;
 
 import javax.swing.JFrame;
 import javax.swing.JSlider;
@@ -36,10 +35,8 @@ public final class TheWindow extends JFrame {
 	/**
 	 * Constructor of TheWindow class.
 	 * 
-	 * @throws HeadlessException
-	 *             If a system hasn't input devices.
 	 */
-	TheWindow() throws HeadlessException {
+	TheWindow() {
 		super("The title");
 
 		myPanel = new DrawOval();
