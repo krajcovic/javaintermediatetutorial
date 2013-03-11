@@ -7,11 +7,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.PriorityQueue;
+import java.util.Set;
 import java.util.Stack;
 
 /**
@@ -41,13 +43,29 @@ public final class Bucky {
 		// tutorial10();
 		// tutorial12();
 		// tutorial14();
-		tutorial15();
+		// tutorial15();
+		tutorial16();
 
+	}
+
+	/**
+	 * HashSet.
+	 */
+	private static void tutorial16() {
+		String[] things = { "apple", "bob", "ham", "bob", "bacon" };
+		List<String> list = Arrays.asList(things);
+
+		System.out.printf("%s ", list);
+		System.out.println();
+
+		Set<String> set = new HashSet<>(list);
+		System.out.printf("%s ", set);
 	}
 
 	/**
 	 * Queue.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial15() {
 		PriorityQueue<String> q = new PriorityQueue<>();
 
