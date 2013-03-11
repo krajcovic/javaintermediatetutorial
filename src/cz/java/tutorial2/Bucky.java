@@ -45,13 +45,51 @@ public final class Bucky {
 		// tutorial14();
 		// tutorial15();
 		// tutorial16();
-		tutorial17();
+		// tutorial17();
+		tutorial18();
 
+	}
+
+	/**
+	 * Generic return types.
+	 */
+	private static void tutorial18() {
+		System.out.println(max(23, 41, 2));
+		System.out.println(max("apples", "xbobs", "chicken"));
+	}
+
+	/**
+	 * Return max objcet from input parameters.
+	 * 
+	 * @param <T>
+	 *            comparable type.
+	 * @param a
+	 *            The first value.
+	 * @param b
+	 *            The second value.
+	 * @param c
+	 *            The thirst value.
+	 * @return The maximal value.
+	 */
+	public static <T extends Comparable<T>> T max(final T a, final T b,
+			final T c) {
+		T m = a;
+
+		if (b.compareTo(m) > 0) {
+			m = b;
+		}
+
+		if (c.compareTo(m) > 0) {
+			m = c;
+		}
+
+		return m;
 	}
 
 	/**
 	 * Generic methods.
 	 */
+	@SuppressWarnings("unused")
 	private static void tutorial17() {
 		Integer[] iray = { 1, 2, 3, 4 };
 		Character[] cray = { 'b', 'u', 'c', 'y' };
